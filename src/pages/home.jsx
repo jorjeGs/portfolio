@@ -4,6 +4,9 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { SiTailwindcss, SiPhp, SiExpress} from "react-icons/si";
 import { DiMysql } from "react-icons/di";
 import { MdEmail } from "react-icons/md";
+import profilePhoto from '../assets/photo.jpeg';
+import cookioPhoto from '../assets/cookio.png';
+import apiPhoto from '../assets/api.png';
 
 const handleDownload = () => {
     window.open('src/assets/CV.pdf', '_blank'); // Abre una nueva pestaña
@@ -26,7 +29,7 @@ const Home = () => {
                 <div className='home flex flex-col h-full sm:max-w-3xl w-10/12 justify-center items-center gap-8 mb-6 mx-auto'>
                     <div className='home-title hover:bg-transparent transition duration-300 flex sm:flex-row flex-col items-center h-auto mt-14 justify-center bg-[#004B87] mx-auto gap-6 rounded-3xl p-8'>
                         <div className="home-title-photo sm:w-1/4 w-1/3 rounded-full shadow-2xl bg-white transition duration-300 transform hover:scale-110">
-                            <img className="rounded-full w-full border-8 border-blue-500 shadow-2xl" src="src\assets\photo.jpeg" alt="profile" />
+                            <img className="rounded-full w-full border-8 border-blue-500 shadow-2xl" src={profilePhoto} alt="profile" />
                         </div>
                         <div className="home-title-text sm:w-3/4 w-full flex flex-col gap-3">
                             <h1 className='text-white font-bold text-3xl text-center sm:text-start'>Hi, I'm <span className="text-[#FF4136]">Jorge</span></h1>
@@ -101,7 +104,7 @@ const Home = () => {
                         <div className="home-projects-list flex flex-col w-full h-auto gap-6">
                             <div className="flex sm:flex-row flex-col w-full sm:max-h-56 h-auto items-center rounded-lg justify-center p-2 gap-6 transition duration-300 transform hover:scale-110">
                                 <div className="flex sm:w-1/2 w-full sm:max-h-full max-h-40 mx-auto my-auto sm:mb-0">
-                                    <img className="w-full h-full mx-auto rounded-2xl" src='src\assets\cookio.png' alt="Cookio" />
+                                    <img className="w-full h-full mx-auto rounded-2xl" src={cookioPhoto} alt="Cookio" />
                                 </div>
                                 <div className="flex flex-col sm:w-1/2 w-full sm:h-full h-full sm:justify-between justify-center items-start">
                                     <div className="text flex flex-col text-center sm:text-left gap-2">
@@ -121,7 +124,7 @@ const Home = () => {
                             </div>
                             <div className="flex sm:flex-row flex-col w-full sm:max-h-56 h-auto items-center rounded-lg justify-center p-2 gap-6 transition duration-300 transform hover:scale-110">
                                 <div className="flex sm:w-1/2 w-full sm:max-h-full max-h-40 mx-auto my-auto sm:mb-0">
-                                    <img className="w-full h-full mx-auto rounded-2xl" src='src\assets\api.png' alt="Cookio" />
+                                    <img className="w-full h-full mx-auto rounded-2xl" src={apiPhoto} alt="Cookio" />
                                 </div>
                                 <div className="flex flex-col sm:w-1/2 w-full sm:h-full h-full sm:justify-between justify-center items-start">
                                     <div className="text flex flex-col text-center sm:text-left gap-2">
