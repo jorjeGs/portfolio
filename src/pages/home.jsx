@@ -7,9 +7,10 @@ import { MdEmail } from "react-icons/md";
 import profilePhoto from '../assets/photo.jpeg';
 import cookioPhoto from '../assets/cookio.png';
 import apiPhoto from '../assets/api.png';
+import resume from '../assets/CV.pdf';
 
 const handleDownload = () => {
-    window.open('src/assets/CV.pdf', '_blank'); // Abre una nueva pestaña
+    window.open(resume, '_blank'); // Abre una nueva pestaña
   };
 
 const copyToClipboard = async () => {
