@@ -1,17 +1,19 @@
 import { FaLinkedin, FaGithub, FaReact, FaNodeJs, FaGitAlt, FaCss3Alt, FaToolbox, FaBootstrap, FaStar } from "react-icons/fa";
-import { FaGraduationCap } from "react-icons/fa6";
+import { FaGraduationCap, FaAws } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiTailwindcss, SiPhp, SiExpress} from "react-icons/si";
+import { TbApi } from "react-icons/tb";
+import { SiTailwindcss, SiPhp, SiExpress } from "react-icons/si";
 import { DiMysql } from "react-icons/di";
 import { MdEmail } from "react-icons/md";
 import profilePhoto from '../assets/photo.jpeg';
 import cookioPhoto from '../assets/cookio.png';
+import taskflowPhoto from '../assets/taskflow.png';
 import apiPhoto from '../assets/api.png';
 import resume from '../assets/CV.pdf';
 
 const handleDownload = () => {
     window.open(resume, '_blank'); // Abre una nueva pestaña
-  };
+};
 
 const copyToClipboard = async () => {
     //function to copy email to clipboard from input field with navigator clipboard api
@@ -105,17 +107,38 @@ const Home = () => {
                         <div className="home-projects-list flex flex-col w-full h-auto gap-6">
                             <div className="flex sm:flex-row flex-col w-full sm:max-h-56 h-auto items-center rounded-lg justify-center p-2 gap-6 transition duration-300 transform hover:scale-110">
                                 <div className="flex sm:w-1/2 w-full sm:max-h-full max-h-40 mx-auto my-auto sm:mb-0">
-                                    <img className="w-full h-full mx-auto rounded-2xl" src={cookioPhoto} alt="Cookio" />
+                                    <img className="w-full h-full mx-auto rounded-2xl" src={taskflowPhoto} alt="Taskflow" />
                                 </div>
                                 <div className="flex flex-col sm:w-1/2 w-full sm:h-full h-full sm:justify-between justify-center items-start">
                                     <div className="text flex flex-col text-center sm:text-left gap-2">
-                                        <p className="text-3xl font-bold text-white">Cookio Blog</p>
-                                        <p className="mb-2 text-gray-200">Login, image and text entry creation and interaction (AWS S3).</p>
+                                        <p className="text-3xl font-bold text-white">Taskflow</p>
+                                        <p className="mb-2 text-gray-200">Simply login, tables and tasks management (local storage).</p>
                                     </div>
                                     <div className="icons flex flex-row gap-4 items-center sm:justify-start justify-center mb-2 ">
                                         <FaReact className="text-4xl text-blue-400" />
                                         <IoLogoJavascript className="text-4xl text-yellow-400" />
                                         <SiTailwindcss className="text-4xl text-blue-300" />
+                                    </div>
+                                    <div className="buttons flex flex-row gap-2 sm:justify-start justify-center align-bottom">
+                                        <a href="https://taskflow-app.onrender.com" target="_blank" rel="noopener noreferrer" className="download-cv font-bold py-1 px-2 bg-white hover:bg-red-500 text-black hover:text-white rounded-md transition duration-300 ease-in-out">Live</a>
+                                        <a href="https://github.com/jorjeGs/ToDo-Metrics" target="_blank" rel="noopener noreferrer" className="download-cv font-bold py-1 px-2 bg-white hover:bg-black text-black hover:text-white rounded-md transition duration-300 ease-in-out">Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="flex sm:flex-row flex-col w-full sm:max-h-56 h-auto items-center rounded-lg justify-center p-2 gap-6 transition duration-300 transform hover:scale-110">
+                                <div className="flex sm:w-1/2 w-full sm:max-h-full max-h-40 mx-auto my-auto sm:mb-0">
+                                    <img className="w-full h-full mx-auto rounded-2xl" src={cookioPhoto} alt="Cookio" />
+                                </div>
+                                <div className="flex flex-col sm:w-1/2 w-full sm:h-full h-full sm:justify-between justify-center items-start">
+                                    <div className="text flex flex-col text-center sm:text-left gap-2">
+                                        <p className="text-3xl font-bold text-white">Cookio Blog</p>
+                                        <p className="mb-2 text-gray-200">Login auth, image and text entry creation and interaction (AWS S3).</p>
+                                    </div>
+                                    <div className="icons flex flex-row gap-4 items-center sm:justify-start justify-center mb-2 ">
+                                        <FaReact className="text-4xl text-blue-400" />
+                                        <IoLogoJavascript className="text-4xl text-yellow-400" />
+                                        <SiTailwindcss className="text-4xl text-blue-300" />
+                                        <TbApi className="text-5xl text-white" />
                                     </div>
                                     <div className="buttons flex flex-row gap-2 sm:justify-start justify-center align-bottom">
                                         <a href="https://cookio-app.onrender.com" target="_blank" rel="noopener noreferrer" className="download-cv font-bold py-1 px-2 bg-white hover:bg-red-500 text-black hover:text-white rounded-md transition duration-300 ease-in-out">Live</a>
@@ -125,7 +148,7 @@ const Home = () => {
                             </div>
                             <div className="flex sm:flex-row flex-col w-full sm:max-h-56 h-auto items-center rounded-lg justify-center p-2 gap-6 transition duration-300 transform hover:scale-110">
                                 <div className="flex sm:w-1/2 w-full sm:max-h-full max-h-40 mx-auto my-auto sm:mb-0">
-                                    <img className="w-full h-full mx-auto rounded-2xl" src={apiPhoto} alt="Cookio" />
+                                    <img className="w-full h-full bg-cover mx-auto rounded-2xl" src={apiPhoto} alt="Cookio" />
                                 </div>
                                 <div className="flex flex-col sm:w-1/2 w-full sm:h-full h-full sm:justify-between justify-center items-start">
                                     <div className="text flex flex-col text-center sm:text-left gap-2">
@@ -136,13 +159,14 @@ const Home = () => {
                                         <FaNodeJs className="text-4xl text-green-400" />
                                         <DiMysql className="text-4xl font-bold text-orange-300" />
                                         <SiExpress className="text-4xl text-white" />
+                                        <FaAws className="text-4xl text-yellow-600" />
                                     </div>
                                     <div className="buttons flex flex-row gap-2 sm:justify-start justify-center align-bottom">
                                         <a href="https://github.com/jorjeGs/CookioAPI" target="_blank" rel="noopener noreferrer" className="download-cv font-bold py-1 px-2 bg-white hover:bg-black text-black hover:text-white rounded-md transition duration-300 ease-in-out">Code</a>
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                     <div className="home-contact flex flex-col items-center w-full h-auto justify-center mx-auto gap-6 mb-6">
