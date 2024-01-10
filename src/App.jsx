@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <div className="App flex bg-[#001F3F] w-full h-auto justify-center">
+      <div className="App flex bg-gray-600 w-full h-auto justify-center">
         <BrowserRouter>
           <Routes>
             <Route index element={<Home />} />
