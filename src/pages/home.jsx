@@ -196,7 +196,7 @@ const Home = () => {
                             <MdEmail className="text-3xl text-white" />
                         </div>
                         <div className="home-contact-email w-full flex justify-center items-center gap-3">
-                            <input className="w-full text-white h-10 rounded-md border-2 border-gray-200 font-bold focus:outline-none focus:border-blue-300" type="text" placeholder="Email" value="   jgs_23072000@outlook.com" disabled />
+                            <input className="w-full text-black h-10 rounded-md border-2 border-gray-200 font-bold focus:outline-none focus:border-blue-300" type="text" placeholder="Email" value="   jgs_23072000@outlook.com" disabled />
                             <button onClick={copyToClipboard} className="copy-email py-2 px-4 bg-white hover:bg-black text-black hover:text-white rounded-md transition duration-300 ease-in-out">Copy</button>
                         </div>
                     </div>
