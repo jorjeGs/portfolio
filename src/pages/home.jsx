@@ -88,14 +88,14 @@ const Home = () => {
                                     <li className="ms-4">
                                         <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"></div>
                                         <time className="mb-1 text-sm font-normal leading-none text-gray-100">June 2023 - August 2023</time>
-                                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Web Developer - AXP TEK</h3>
+                                        <h3 className="text-lg font-semibold text-white">Web Developer - AXP TEK</h3>
                                         <p className="text-base font-normal text-gray-100">Requirement analysis.</p>
                                         <p className="text-base font-normal text-gray-100">Responsive view and database table design.</p>
                                         <p className="text-base font-normal text-gray-100">SQL querys and MVC.</p>
                                         <p className="text-base font-normal text-gray-100">Login auth and session data management.</p>
                                         <div className="home-experience-timeline-icons flex justify-end items-center gap-4 mt-4">
                                             <SiPhp className="text-4xl text-purple-300" />
-                                            <IoLogoJavascript className="text-2xl text-yellow-400" />
+                                            <IoLogoJavascript className="text-2xl text-yellow-300" />
                                             <DiMysql className="text-4xl font-bold text-orange-300" />
                                             <FaBootstrap className="text-3xl text-purple-300" />
                                         </div>
@@ -104,17 +104,20 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="home-study-degree group transition duration-300 transform hover:scale-105 ease-in-out sm:w-2/5 w-full h-full flex flex-col bg-[#00AAB2] rounded-3xl p-4 mx-auto items-center justify-center gap-4">
-                            
-                                <div className="home-study-degree-logo flex justify-center items-center">
-                                    <a href="https://www.coursera.org/account/accomplishments/verify/JY4XHFSQNXNU?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" className="" target="_blank" rel="noopener noreferrer" >
-                                        <PiCertificateDuotone className=" text-8xl group-hover:text-yellow-300 text-white transition duration-300 " />
-                                    </a>
+                            <div className="home-study-degree-logo flex justify-center items-center">
+                                <a data-tooltip-target="tooltip-cert" data-tooltip-trigger="hover" data-tooltip-placement="top" href="https://www.coursera.org/account/accomplishments/verify/JY4XHFSQNXNU?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" className="h-auto" target="_blank" rel="noopener noreferrer" >
+                                    <PiCertificateDuotone className=" text-8xl group-hover:text-yellow-300 text-white transition duration-300 " />
+                                </a>
+                                <div id="tooltip-cert" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                    Click to verify!
+                                    <div class="tooltip-arrow" data-popper-arrow></div>
                                 </div>
-                                <div className="home-study-degree-text flex flex-col justify-center items-center text-center mx-auto">
-                                    <p className="text-white font-bold text-3xl">React Certificate</p>
-                                    <p className="text-white mt-1">Developing Front-End Apps with React by IBM</p>
-                                </div>
-                            
+                            </div>
+                            <div className="home-study-degree-text flex flex-col justify-center items-center text-center mx-auto">
+                                <p className="text-white font-bold text-3xl">React Certificate</p>
+                                <p className="text-white mt-1">Developing Front-End Apps with React by IBM</p>
+                            </div>
+
                         </div>
                     </div>
                     <div className='home-projects transition duration-300 flex flex-col items-center w-full h-auto justify-center bg-[#9B7563] mx-auto gap-6 rounded-3xl p-8'>
@@ -134,7 +137,7 @@ const Home = () => {
                                     </div>
                                     <div className="icons flex flex-row gap-4 items-center sm:justify-start justify-center mb-2 ">
                                         <FaReact className="text-4xl text-blue-300" />
-                                        <IoLogoJavascript className="text-4xl text-yellow-400" />
+                                        <IoLogoJavascript className="text-4xl text-yellow-300" />
                                         <SiTailwindcss className="text-4xl text-blue-300" />
                                     </div>
                                     <div className="buttons flex flex-row gap-2 sm:justify-start justify-center align-bottom">
@@ -154,7 +157,7 @@ const Home = () => {
                                     </div>
                                     <div className="icons flex flex-row gap-4 items-center sm:justify-start justify-center mb-2 ">
                                         <FaReact className="text-4xl text-blue-300" />
-                                        <IoLogoJavascript className="text-4xl text-yellow-400" />
+                                        <IoLogoJavascript className="text-4xl text-yellow-300" />
                                         <SiTailwindcss className="text-4xl text-blue-300" />
                                         <TbApi className="text-5xl text-white" />
                                     </div>
