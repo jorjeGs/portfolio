@@ -9,8 +9,7 @@ function App() {
       <div className="App flex bg-gray-600 w-full h-auto justify-center">
         <BrowserRouter>
           <Routes>
-            <Route index element={<Home />} />
-            <Route path='/*' element={<h1>Oops, there's nothing more in here...</h1>} />
+            <Route path='/*' element={<Home />} />
           </Routes>
         </BrowserRouter>
       </div>
