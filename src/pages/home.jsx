@@ -1,6 +1,6 @@
-import { FaLinkedin, FaGithub, FaReact, FaNodeJs, FaGitAlt, FaCss3Alt, FaToolbox, FaBootstrap, FaStar } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaReact, FaNodeJs, FaGitAlt, FaCss3Alt, FaToolbox, FaBootstrap, FaStar, FaDatabase } from "react-icons/fa";
 import { FaGraduationCap, FaAws } from "react-icons/fa6";
-import { IoLogoJavascript } from "react-icons/io5";
+import { IoLogoJavascript, IoLogoAngular } from "react-icons/io5";
 import { TbApi } from "react-icons/tb";
 import { SiTailwindcss, SiPhp, SiExpress } from "react-icons/si";
 import { DiMysql } from "react-icons/di";
@@ -67,13 +67,12 @@ const Home = () => {
                             </div>
                             <div className="home-study-frameworks-logos flex flex-wrap mt-8 gap-3 items-center justify-center">
                                 <FaReact className="text-6xl text-white hover:text-blue-300 transition duration-300 ease-in-out" />
+                                <IoLogoAngular className="text-6xl text-white hover:text-red-400 transition duration-300 ease-in-out" />
                                 <IoLogoJavascript className="text-6xl text-white hover:text-yellow-300 transition duration-300 ease-in-out" />
                                 <SiPhp className="text-6xl text-white hover:text-purple-300 transition duration-300 ease-in-out" />
-                                <FaNodeJs className="text-6xl text-white hover:text-green-400 transition duration-300 ease-in-out" />
                                 <DiMysql className="text-6xl text-white hover:text-orange-300 transition duration-300 ease-in-out" />
                                 <FaGitAlt className="text-6xl text-white hover:text-orange-300 transition duration-300 ease-in-out" />
                                 <FaCss3Alt className="text-6xl text-white hover:text-blue-300 transition duration-300 ease-in-out" />
-                                <SiTailwindcss className="text-6xl text-white hover:text-blue-300 transition duration-300 ease-in-out" />
                             </div>
                         </div>
                     </div>
@@ -85,6 +84,20 @@ const Home = () => {
                             </div>
                             <div className="home-experience-timeline flex w-full items-center justify-center">
                                 <ol className="relative border-s border-gray-200">
+                                    <li className="ms-4">
+                                        <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+                                        <time className="mb-1 text-sm font-normal leading-none text-gray-100">January 2024 - Today</time>
+                                        <h3 className="text-lg font-semibold text-white">Full Stack Developer - Integranet</h3>
+                                        <p className="text-base font-normal text-gray-100">Client-Facing Support & Development.</p>
+                                        <p className="text-base font-normal text-gray-100">Bash utilities, deployment and version control.</p>
+                                        <p className="text-base font-normal text-gray-100">EC2 instance management, API/SQL transaction operations.</p>
+                                        <div className="home-experience-timeline-icons flex justify-end items-center gap-4 mt-4">
+                                            <SiPhp className="text-4xl text-purple-300" />
+                                            <IoLogoAngular className="text-2xl text-red-400" />
+                                            <DiMysql className="text-4xl font-bold text-orange-300" />
+                                            <FaBootstrap className="text-3xl text-purple-300" />
+                                        </div>
+                                    </li>
                                     <li className="ms-4">
                                         <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"></div>
                                         <time className="mb-1 text-sm font-normal leading-none text-gray-100">June 2023 - August 2023</time>
@@ -137,8 +150,8 @@ const Home = () => {
                                     </div>
                                     <div className="icons flex flex-row gap-4 items-center sm:justify-start justify-center mb-2 ">
                                         <FaReact className="text-4xl text-blue-300" />
-                                        <IoLogoJavascript className="text-4xl text-yellow-300" />
                                         <SiTailwindcss className="text-4xl text-blue-300" />
+                                        <FaDatabase className="text-3xl text-white" />
                                     </div>
                                     <div className="buttons flex flex-row gap-2 sm:justify-start justify-center align-bottom">
                                         <a href="https://taskflow-app.onrender.com" target="_blank" rel="noopener noreferrer" className="download-cv font-bold py-1 px-2 bg-white hover:bg-red-500 text-black hover:text-white rounded-md transition duration-300 ease-in-out">Live</a>
@@ -153,11 +166,10 @@ const Home = () => {
                                 <div className="flex flex-col sm:w-1/2 w-full sm:h-full h-full sm:justify-between justify-center items-start">
                                     <div className="text flex flex-col text-center sm:text-left gap-2">
                                         <p className="text-3xl font-bold text-white ">Cookio Blog</p>
-                                        <p className="mb-2 text-gray-200">Login auth, image and text entry creation and interaction (AWS S3).</p>
+                                        <p className="mb-2 text-gray-200">Login auth, image and text blog creation and interaction (AWS S3).</p>
                                     </div>
                                     <div className="icons flex flex-row gap-4 items-center sm:justify-start justify-center mb-2 ">
                                         <FaReact className="text-4xl text-blue-300" />
-                                        <IoLogoJavascript className="text-4xl text-yellow-300" />
                                         <SiTailwindcss className="text-4xl text-blue-300" />
                                         <TbApi className="text-5xl text-white" />
                                     </div>
@@ -177,7 +189,7 @@ const Home = () => {
                                         <p className="mb-2 text-gray-200">Token auth, password encrypt, CRUD, AWS S3 file management.</p>
                                     </div>
                                     <div className="icons flex flex-row gap-4 items-center sm:justify-start justify-center mb-2 ">
-                                        <FaNodeJs className="text-4xl text-green-400" />
+                                        <FaNodeJs className="text-4xl text-green-300" />
                                         <DiMysql className="text-4xl font-bold text-orange-200" />
                                         <SiExpress className="text-4xl text-white" />
                                         <FaAws className="text-4xl text-yellow-300" />
