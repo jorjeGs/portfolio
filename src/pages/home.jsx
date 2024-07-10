@@ -2,7 +2,7 @@ import { FaLinkedin, FaGithub, FaReact, FaNodeJs, FaGitAlt, FaCss3Alt, FaToolbox
 import { FaGraduationCap, FaAws } from "react-icons/fa6";
 import { IoLogoJavascript, IoLogoAngular } from "react-icons/io5";
 import { TbApi } from "react-icons/tb";
-import { SiTailwindcss, SiPhp, SiExpress } from "react-icons/si";
+import { SiTailwindcss, SiPhp, SiTypescript, SiExpress } from "react-icons/si";
 import { DiMysql } from "react-icons/di";
 import { MdEmail } from "react-icons/md";
 import { PiCertificateDuotone } from "react-icons/pi";
@@ -66,13 +66,14 @@ const Home = () => {
                                 <p className="font-bold text-3xl text-white">Knowledgement</p>
                             </div>
                             <div className="home-study-frameworks-logos flex flex-wrap mt-8 gap-3 items-center justify-center">
-                                <FaReact className="text-6xl text-white hover:text-blue-300 transition duration-300 ease-in-out" />
-                                <IoLogoAngular className="text-6xl text-white hover:text-red-400 transition duration-300 ease-in-out" />
+                                <FaCss3Alt className="text-6xl text-white hover:text-blue-300 transition duration-300 ease-in-out" />
                                 <IoLogoJavascript className="text-6xl text-white hover:text-yellow-300 transition duration-300 ease-in-out" />
                                 <SiPhp className="text-6xl text-white hover:text-purple-300 transition duration-300 ease-in-out" />
                                 <DiMysql className="text-6xl text-white hover:text-orange-300 transition duration-300 ease-in-out" />
                                 <FaGitAlt className="text-6xl text-white hover:text-orange-300 transition duration-300 ease-in-out" />
-                                <FaCss3Alt className="text-6xl text-white hover:text-blue-300 transition duration-300 ease-in-out" />
+                                <FaReact className="text-6xl text-white hover:text-blue-300 transition duration-300 ease-in-out" />
+                                <IoLogoAngular className="text-6xl text-white hover:text-red-400 transition duration-300 ease-in-out" />
+								<SiTypescript className="text-5xl text-white hover:text-blue-300 transition duration-300 ease-in-out" />
                             </div>
                         </div>
                     </div>
@@ -94,6 +95,7 @@ const Home = () => {
                                         <div className="home-experience-timeline-icons flex justify-end items-center gap-4 mt-4">
                                             <SiPhp className="text-4xl text-purple-300" />
                                             <IoLogoAngular className="text-2xl text-red-400" />
+											<SiTypescript className="text-2xl text-blue-300" />
                                             <DiMysql className="text-4xl font-bold text-orange-300" />
                                             <FaBootstrap className="text-3xl text-purple-300" />
                                         </div>
